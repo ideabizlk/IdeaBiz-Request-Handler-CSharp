@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IdeabizDemo.IdeabizHandler" GeneratedClassName="Ideabiz">
+  <Profiles />
+  <Settings>
+    <Setting Name="CONSUMER_KEY" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="CONSUMER_SECRET" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="ACCESS_TOKEN" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="REFRESH_TOKEN" Type="System.String" Scope="User">
+      <Value Profile="(Default)"></Value>
+    </Setting>
+    <Setting Name="TOKEN_API" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://ideabiz.lk/apicall/token</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
