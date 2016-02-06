@@ -28,6 +28,8 @@ can send apicall using `sendAPICall` method
 
 ####Parameters
 
+|Parameters		| Description																			|
+|---------------|---------------------------------------------------------------------------------------|
 |URL			| Request full URL (eg : https://ideabiz.lk/apicall/smsmessaging/v2/94777123456/request	|
 |method			| IdeabizAPIAuth.REQUEST_METHOD GET OR POST												|
 |body 			| plain text body. JSON string or urlencoded body										|
@@ -36,9 +38,11 @@ can send apicall using `sendAPICall` method
 
 ####Return IdeabizResponse class
 
-|status		| SUCCESS OR ERROR					|
-|statusCode	| HTTP status code (Eg : 200,400)	|
-|body		| API call response					|
+|Parameters		| Description						|
+|---------------|-----------------------------------|
+|status			| SUCCESS OR ERROR					|
+|statusCode		| HTTP status code (Eg : 200,400)	|
+|body			| API call response					|
 
 ####Saving credentials
 This class save credentials in settings. If need save settins on DB or other data souce, please re impliment `IdabizAuth.readSettings()` and `IdabizAuth.saveSettings()` method
