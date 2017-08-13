@@ -28,7 +28,7 @@ namespace IdeabizDemo
             
             IdeabizResponse response = idabizAuth.sendRequest(URL, method, body, contentType, "Bearer " + idabizAuth.ACCESS_TOKEN,accept);
 
-            if (response.Status.Equals("ERROR") && response.StatusCode==401 &&  response.Body.Contains("Expired"))
+            if (response.Status.Equals("ERROR") && response.StatusCode==401 && (response.Body.Contains("Expired") || response.Body.Contains("Inactive")))
             {
                 IdabizAuth.renewToken();
                 response = idabizAuth.sendRequest(URL, method, body, contentType, "Bearer " + idabizAuth.ACCESS_TOKEN,accept);
